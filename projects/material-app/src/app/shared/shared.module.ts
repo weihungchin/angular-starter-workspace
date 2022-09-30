@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 // Things to include:
-// components from libraries
-// common components/directives/pipes to use in lazy-loaded feature
+// ✔ components from libraries
+// ✔ contains common components/directives/pipes to be used in lazy-loaded feature
+// should not contain any services 
 
 @NgModule({
   declarations: [],
