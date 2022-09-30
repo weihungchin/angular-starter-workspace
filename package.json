@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "bundle-analyze": "ng build --stats-json && webpack-bundle-analyzer ./dist/material-app/stats.json"
   },
   "private": true,
   "dependencies": {
@@ -46,6 +47,7 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "prettier": "^2.7.1",
     "prettier-eslint": "^15.0.1",
-    "typescript": "~4.7.2"
+    "typescript": "~4.7.2",
+    "webpack-bundle-analyzer": "^4.6.1"
   }
 }
