@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  Material App 
+  Material App
 
   <span class="spacer"> </span>
   <mat-button class="mat-flat-button" color="primary" routerLink="home">
@@ -8,8 +8,9 @@
   <mat-button class="mat-flat-button" color="primary" routerLink="admin">
     Admin
   </mat-button>
+  <mat-slide-toggle [color]="color"></mat-slide-toggle>
 </mat-toolbar>
 
-<main>
+<main class="main">
   <router-outlet></router-outlet>
 </main>

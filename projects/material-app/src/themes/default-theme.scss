@@ -1,0 +1,11 @@
+// color palletes can be found here: https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+@use '@angular/material' as mat;
+@import 'palette.scss';
+
+$am-primary: mat.define-palette($md-default, 500, 300, 900);
+$am-accent: mat.define-palette($md-default, 900);
+$am-warn: mat.define-palette($md-default, 'A700');
+
+$am-theme: mat.define-light-theme($am-primary, $am-accent, $am-warn);
+
+

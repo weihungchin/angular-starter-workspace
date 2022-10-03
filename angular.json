@@ -28,7 +28,6 @@
               "projects/material-app/src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "projects/material-app/src/styles.scss"
             ],
             "scripts": []
@@ -97,7 +96,6 @@
               "projects/material-app/src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "projects/material-app/src/styles.scss"
             ],
             "scripts": []

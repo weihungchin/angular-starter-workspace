@@ -1,4 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+// Custom Theming with Angular Material: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+@include mat.core();
+@import './app/features/home/home.component.scss-theme';
+
+@import 'styles-reset';
+@import './themes/default-theme';
+@import './themes/dark-theme';
+
+@mixin custom-components-theme($theme) {
+  @include home-component-theme($theme);
+}
+
+.default-theme {
+  @include mat.all-component-themes($am-theme);
+  @include custom-components-theme($am-theme);
+}
+
+.dark-theme {
+  @include mat.all-component-themes($am-dark-theme);
+  @include custom-components-theme($am-dark-theme);
+}
+
+.main-content {
+  height: 100%;
+}
