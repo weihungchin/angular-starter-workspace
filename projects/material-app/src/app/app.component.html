@@ -1,1 +1,3 @@
-<app-global-layout></app-global-layout>
+<div [class]="(theme$ | async)">
+  <app-global-layout></app-global-layout>
+</div>

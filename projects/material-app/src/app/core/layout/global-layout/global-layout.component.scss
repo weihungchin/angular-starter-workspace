@@ -1,19 +1,5 @@
-$toolbarHeight: 56px;
-
 mat-button {
   margin: 0 10px;
   cursor: pointer;
   padding: 4px 16px;
-}
-.main {
-  padding-top: $toolbarHeight;
-  min-height: calc(100vh - $toolbarHeight);
-}
-.spacer {
-  flex: 1 0 auto;
-}
-
-mat-toolbar {
-  height: $toolbarHeight;
-  position: fixed;
 }

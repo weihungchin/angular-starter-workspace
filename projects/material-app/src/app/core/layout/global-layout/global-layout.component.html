@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class = "header">
   Material App
 
   <span class="spacer"> </span>
@@ -8,7 +8,7 @@
   <mat-button class="mat-flat-button" color="primary" routerLink="admin">
     Admin
   </mat-button>
-  <mat-slide-toggle [color]="color"></mat-slide-toggle>
+  <mat-slide-toggle [color]="color" (change)="onToggleTheme($event)" [checked]="toggleChecked$ | async"></mat-slide-toggle>
 </mat-toolbar>
 
 <main class="main">

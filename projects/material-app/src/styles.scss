@@ -11,6 +11,8 @@ body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
+$toolbarHeight: 64px;
+
 @include mat.core();
 @import './app/features/home/home.component.scss-theme';
 
@@ -33,5 +35,18 @@ body {
 }
 
 .main-content {
-  height: 100%;
+  min-height: calc(100vh - $toolbarHeight);
+}
+
+.header {
+  height: $toolbarHeight;
+  position: fixed;
+}
+
+.main {
+  padding-top: $toolbarHeight;
+  min-height: 100vh;
+}
+.spacer {
+  flex: 1 0 auto;
 }
