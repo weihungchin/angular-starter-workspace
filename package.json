@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
+    "build": "ng build",
     "bundle-analyze": "ng build --stats-json && webpack-bundle-analyzer ./dist/material-app/stats.json"
   },
   "private": true,
