@@ -6,8 +6,13 @@ import { AppState } from './core/core.state';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: `
+  <div [class]="(theme$ | async)">
+  <app-global-layout></app-global-layout>
+</div>
+
+  `,
+  styles: [``],
 })
 export class AppComponent {
   title = 'material-app';
@@ -16,7 +21,6 @@ export class AppComponent {
   constructor(private store: Store<AppState>) {
     this.theme$ = this.store.pipe(
       select(selectTheme),
-      tap(val => console.log(val))
     );
   }
 }
